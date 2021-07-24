@@ -29,11 +29,56 @@
     </li>
     </ul>
   </div>
+   <!-- Модальное окно хедер-->
+   <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button data-modal-close class="header-section__icon-close" type="button"><svg width="16" height="16">
+            <use href="./images/sprite.svg#icon-close"></use>
+        </svg></button>
+        <form action="#" class="modal__form">
+            <p class="modal__provoke-text">Make an order for yammy</p>
+            <div class="modal__form-group">
+                <label  class="modal__label" for="username">Name</label>
+                <input type="text" name="name" id="username" class="modal__input" minlength="2">
+            </div>
+  
+            <div  class="modal__form-group">
+                <label for="user-phone" class="modal__label">Phone</label>
+                <input type="tel" name="phone_number" id="user-phone" class="modal__input">
+            </div>
+  
+            <div  class="modal__form-group">
+                <label for="user-contact" class="modal__label">Email</label>
+                <input type="email" name="email" id="user-contact" class="modal__input">
+            </div>
+  
+            <div  class="modal__form-group">
+                <label for="comment" class="modal__label">Comment</label>
+                <textarea name="feedback" id="comment" class="modal__comment" placeholder="Write here"></textarea>  
+            </div>
+  
+            <div class="modal__checkbox">
+                <input type="checkbox" name="user-agree" id="checkbox" class="visually-hidden modal__checkbox-input" required>
+               <label for="checkbox" class="modal__checkbox-label">
+                   <span><span>
+                    <svg width="18" height="18" class="modal__checkbox-icon">
+                        <use href="./images/sprite.svg#icon-checkbox"></use>
+                    </svg>
+                    </span>
+                        I promise I will not explode
+                    </span>
+            
+                  </label>
+                <button type="submit" class="modal__button">Buy now</button>
+            </div>
+        </form>
+    </div>
+  </div>
   
   <!-- Мобильное меню -->
   <div class="mobile-menu is-hidden">
     <div class="mobile-menu__container">
-        <button data-modal-open data-modal-open-additional type="button" class="mobile-menu__close-button">
+        <button type="button" class="mobile-menu__close-button">
             <svg width="14" height="14">
                 <use href="./images/sprite.svg#icon-close"></use>
             </svg>
@@ -44,7 +89,7 @@
             </svg>
            </button>
         <nav class="navigation">
-            <ul class="navigation__list" >
+            <ul class="navigation__list">
                 <li class="navigation__item"><a href="#header" class="navigation__link highlighted">Home</a></li>
                 <li class="navigation__item"><a href="#advantages" class="navigation__link">About us</a></li>
                 <li class="navigation__item"><a href="#about" class="navigation__link">How it’s made?</a></li>
@@ -54,10 +99,11 @@
         </nav>
       </div>
     </div>
-    <!-- Модальное окно -->
+
+       <!-- Модальное окно моб-меню -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button data-modal-close class="header-section__icon-close" type="button"><svg width="16" height="16">
+            <button data-modal-close-additional class="header-section__icon-close" type="button"><svg width="16" height="16">
                 <use href="./images/sprite.svg#icon-close"></use>
             </svg></button>
             <form action="#" class="modal__form">
@@ -90,9 +136,9 @@
                             <use href="./images/sprite.svg#icon-checkbox"></use>
                         </svg>
                         </span>
- 
-                        </span>I promise I will not explode
-                        <!-- &nbsp;<a href="" class="modal__checkbox-link">Условия договора</a> -->
+                            I promise I will not explode
+                        </span>
+                       
                       </label>
                     <button type="submit" class="modal__button">Buy now</button>
                 </div>
