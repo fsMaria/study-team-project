@@ -1,0 +1,107 @@
+.hero-section{
+    overflow: hidden ;
+    background-color: #FFB8CA;
+    max-width: 320px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 420px;
+        background-position: center;}
+    
+        .hero-section  {
+            @media screen and (min-width: 768px){
+                max-width: 780px;
+               
+            }
+            @media screen and (min-width: 1200px){
+                max-width: 1200px;
+            }
+        } 
+    .hero-section-ellipse{
+       
+        border-radius: 50%;
+        width: 346px;
+    height: 344px;
+    background: #FFA5BA;
+    animation-name: scale;
+    animation-direction: 2s;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    }
+
+   
+    .hero-section-information{
+        margin-top: 100px;
+        position: absolute;
+    padding-left: 20px;
+}
+
+    
+    @keyframes scale{
+        0%{ transform: scale(0.25);}
+        100%{transform: scale(1);}
+    }
+    
+    .hero-section-ice-cream{
+margin-left: 117px;
+        animation-name: apperance;
+        animation-duration: 4s;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    @keyframes apperance{
+        0%{ opacity: 0;}
+        100%{opacity: 1;}
+    }
+    
+    
+    .hero-section-title-ice{
+        font-family: Titan One;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    width: 218px;
+    height: 106px;
+    }
+    
+    .hero-section-title-p{
+        font-family: Titan One;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 96.5%;
+    color: #D41443;
+    }
+    
+    .hero-section-button-first{
+        font-family: DM Sans;
+    font-weight: 400;
+    margin-right: 8px;
+    font-size: 8px;
+    line-height: 1.25;
+    background: #D41443;
+     color:#FFFFFF;
+    border-radius: 20px;
+    border: none;
+    width: 62.4px;
+    height: 24px;
+    
+    }
+    .hero-section-button{
+        display: flex;
+        margin-top: 20px;
+    }
+    
+    .hero-section-button-second{
+        font-family: DM Sans;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    color: #D41443;
+    background:#FFFFFF;
+    border-radius: 20px;
+    border: none;
+    width: 82.8px;
+    height: 24px;
+    }
+    

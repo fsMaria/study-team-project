@@ -1,0 +1,13 @@
+.gallery-section {
+ background-image: linear-gradient(
+    var(--advantages-color) 40%,
+    var(--text-color) 0%
+  );
+}
+
+.gallery-section__img {
+    display: block;
+    width: 100%;
+    
+}
+
